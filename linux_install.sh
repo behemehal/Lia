@@ -1,7 +1,7 @@
 upath=$(eval echo ~$USER)
 active_shell=$(eval echo "$SHELL")
 installed=0
-echo $active_shell
+sleep 1
 function cleanup()
 {
     if [ $installed -eq 0 ]; then
