@@ -1,0 +1,19 @@
+[package]
+name = "lia"
+version = "0.1.0"
+edition = "2021"
+authors = ["Behemehal <info@behemehal.net>"]
+license-file = "LICENSE"
+default-run = "lia"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1.0"
+serde_yaml = "0.8"
+serde_json = "1.0"
+open = "2.1.1"
+safe_en = { version = "0.1.0", git = "https://github.com/behemehal/SafeEn" }
+clap = { version = "3.1.1" }
+clap_complete = { version = "3.0.0" }
+tokio = { version = "1", features = ["full"] }
